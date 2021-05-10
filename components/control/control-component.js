@@ -3,7 +3,8 @@ import cn from 'classnames'
 
 export default function ControlComponent({className, type}) {
   const controlTypes = {
-    'small-button': styles.isSmallButton
+    'small-button': styles.isSmallButton,
+    'knob': styles.isKnob
   };
 
   const getType = type => {

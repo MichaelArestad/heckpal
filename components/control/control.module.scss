@@ -10,10 +10,9 @@
   }
 }
 
-.controlPreview {
+.controlCard {
   background-color: var(--color-3);
   min-width: rem(86px);
-  margin-right: var(--unit-2);
   padding: rem(12px);
   border-radius: rem(4px);
 }
@@ -30,4 +29,8 @@
   margin-top: var(--unit-2);
   text-align: center;
   text-transform: uppercase;
+}
+
+.description {
+  margin-left: var(--unit-2);
 }

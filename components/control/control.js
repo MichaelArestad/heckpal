@@ -1,18 +1,12 @@
-import ControlComponent from './control-component'
-import LED from '../led/led'
+import ControlCard from './control-card'
+import Description from '../description/description'
 import styles from './control.module.scss'
 
-export default function Control({children, label, led, type}) {
+export default function Control({children, label, led, title, type}) {
   return (
     <div className={styles.control}>
-      <div className={styles.controlPreview}>
-        {led && <LED className={styles.led} color={led}/>}
-        <ControlComponent className={styles.component} type={type} />
-        <div className={styles.label}>{label}</div>
-      </div>
-      <div className={styles.description}>
-        {children}
-      </div>
+      <ControlCard label={label} led={led} type={type} />
+      <Description className={styles.description} title={title}>{children}</Description>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+
+.description {
+  .heading {
+    margin-top: var(--unit-1);
+    margin-bottom: var(--unit-1);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

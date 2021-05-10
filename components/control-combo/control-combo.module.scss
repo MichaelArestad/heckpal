@@ -1,0 +1,50 @@
+@import '../../styles/functions/rem.scss';
+
+.controlComboWrapper {
+  border-bottom: rem(4px) solid var(--color-3);
+  border-bottom-left-radius: rem(4px);
+  border-bottom-right-radius: rem(4px);
+  font-size: var(--font-size-s);
+
+  &:not(:last-child) {
+    margin-bottom: var(--unit-4);
+  }
+}
+
+.controlCombo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: flex-end;
+  background-color: var(--color-3);
+  border-top-left-radius: rem(4px);
+  border-top-right-radius: rem(4px);
+}
+
+.plus {
+  margin-bottom: var(--unit-4);
+  font-size: var(--unit-3);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: var(--unit-1);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+}
+
+.arrow {
+  margin-left: auto;
+  transition: all .15s ease-in-out;
+}
+
+.description {
+  display: none;
+  padding: var(--unit-1);
+
+  .isExpanded & {
+    display: block;
+  }
+}
