@@ -1,0 +1,33 @@
+@import '../../styles/functions/rem.scss';
+
+.screenReaderText {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  word-wrap: normal !important;
+
+  &:focus {
+    display: block;
+    top: var(--unit-2);
+    left: var(--unit-2);
+    background-color: var(--color-4);
+    width: auto;
+    height: auto;
+    padding: var(--unit-1) var(--unit-2);
+    box-shadow: 0 0 0 2px var(--color-5);
+    border-radius: rem(4px);
+    clip: auto !important;
+    clip-path: none;
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    color: var(--color-1);
+    line-height: normal;
+    text-decoration: none;
+  }
+}

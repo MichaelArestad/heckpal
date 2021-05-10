@@ -1,0 +1,8 @@
+.heading {
+  margin-top: var(--unit-4);
+  margin-bottom: var(--unit-2);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.heading {
+  font-weight: 500;
+}
+
+h1.heading {
+  font-size: var(--font-size-xl);
+}
+
+h2.heading {
+  font-size: var(--font-size-xl);
+}
+
+h3.heading {
+  font-size: var(--font-size-l);
+}
+
+h4.heading {
+  font-size: var(--font-size-m);
+}
+
+h5.heading {
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+}
+
+h6.heading {
+  font-size: var(--font-size-s);
+}

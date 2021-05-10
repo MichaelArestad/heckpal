@@ -1,0 +1,29 @@
+@import '../../styles/functions/rem.scss';
+
+// .controlComponent {
+  // background-color: var(--color-1);
+  // margin: 0 auto;
+  // width: 60px;
+  // height: 60px;
+  // border-radius: 50%;
+// }
+
+.isSmallButton {
+  background-color: var(--color-1);
+  width: var(--unit-3);
+  height: var(--unit-3);
+  border-radius: 50%;
+  box-shadow: 0 rem(1px) 0 var(--color-2), 0 rem(2px) 0 var(--color-2), 0 rem(3px) 0 var(--color-2);
+}
+
+// .is-button {
+
+// }
+
+// .is-small-knob {
+
+// }
+
+// .is-knob {
+
+// }

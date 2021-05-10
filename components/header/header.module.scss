@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: var(--unit-2);
+  background: var(--color-4);
+  align-items: center;
+}
+
+.heading {
+  margin: 0;
+  line-height: 1;
+}
+
+.close {
+  margin-left: auto;
+  line-height: 0;
+  color: var(--color-1);
+
+  &:hover {
+    color: var(--color-5);
+  }
+}

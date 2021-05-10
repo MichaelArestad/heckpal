@@ -1,0 +1,33 @@
+@import '../../styles/functions/rem.scss';
+
+.control {
+  display: flex;
+  align-items: flex-start;
+  font-size: var(--font-size-s);
+
+  &:not(:last-child) {
+    margin-bottom: var(--unit-4);
+  }
+}
+
+.controlPreview {
+  background-color: var(--color-3);
+  min-width: rem(86px);
+  margin-right: var(--unit-2);
+  padding: rem(12px);
+  border-radius: rem(4px);
+}
+
+.led {
+  margin: 0 auto rem(12px);
+}
+
+.component {
+  margin: 0 auto;
+}
+
+.label {
+  margin-top: var(--unit-2);
+  text-align: center;
+  text-transform: uppercase;
+}

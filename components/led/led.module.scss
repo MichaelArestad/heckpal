@@ -1,0 +1,9 @@
+@import '../../styles/functions/rem.scss';
+
+.led {
+  width: rem(12px);
+  height: rem(12px);
+  border-radius: 50%;
+  color: red;
+  background-color: currentColor;
+}

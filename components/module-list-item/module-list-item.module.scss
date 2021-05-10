@@ -1,0 +1,30 @@
+@import '../../styles/functions/rem.scss';
+
+.moduleListItem a {
+  display: block;
+  background-color: var(--color-3);
+  padding: var(--unit-2);
+  border-radius: rem(6px);
+  color: var(--color-1);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 rem(2px) var(--color-2);
+    outline: none;
+  }
+  
+  &:hover {
+    box-shadow: 0 0 0 rem(2px) var(--color-5);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 rem(2px) var(--color-5);
+    background-color: var(--color-5);
+    color: var(--color-4);
+  }
+}
+
+.moduleListItem:not(:first-child) {
+  margin-top: var(--unit-1);
+}
