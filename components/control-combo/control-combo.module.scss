@@ -4,6 +4,7 @@
   border-bottom: rem(4px) solid var(--color-3);
   border-bottom-left-radius: rem(4px);
   border-bottom-right-radius: rem(4px);
+  cursor: pointer;
   font-size: var(--font-size-s);
 
   &:not(:last-child) {
@@ -38,11 +39,15 @@
 .arrow {
   margin-left: auto;
   transition: all .15s ease-in-out;
+
+  .isExpanded & {
+    transform: rotate(-180deg);
+  }
 }
 
 .description {
   display: none;
-  padding: var(--unit-1);
+  padding: var(--unit-1) var(--unit-1) var(--unit-2);
 
   .isExpanded & {
     display: block;

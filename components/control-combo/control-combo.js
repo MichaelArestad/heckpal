@@ -22,7 +22,7 @@ export default class ControlCombo extends React.Component {
   toggleDescription() {
     this.setState({
       isExpanded: !this.state.isExpanded
-    })
+    });
   }
 
   isExpanded() {

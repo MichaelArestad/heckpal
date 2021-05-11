@@ -11,7 +11,8 @@ export default function LED({className, color}) {
     'yellow': '#FFFF90',
     'orange': '#FF9B3F',
     'red': '#FF4747',
-    'pink': '#FF81EB'
+    'pink': '#FF81EB',
+    'off': '#888A8F'
   };
 
   if (colorMap[color]) {

@@ -1,0 +1,12 @@
+.dot {
+  display: inline-block;
+  width: var(--unit-1);
+  height: var(--unit-1);
+  border-radius: 50%;
+  background-color: var(--color-3);
+  margin: 4px;
+
+  &.isActive {
+    background-color: var(--color-1);
+  }
+}
